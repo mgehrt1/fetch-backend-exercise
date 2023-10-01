@@ -1,5 +1,7 @@
 # Fetch Backend Exercise
 
+This project implements a REST API for managing user points and transactions. It allows users to add points, spend points, and check their point balance.
+
 ## Instructions for running locally
 
 1. Make sure you have Node.js installed. You can download it from [here](https://nodejs.org/).
