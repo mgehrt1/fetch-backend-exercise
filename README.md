@@ -46,9 +46,7 @@ Description: Adds points to the user's account.
 
 **Response**:
 
-```json
 N/A
-```
 
 ### Spend Points
 
@@ -85,9 +83,7 @@ Description: Retrieves the user's point balance by payer.
 
 **Body**:
 
-```json
 N/A
-```
 
 **Response**:
 
