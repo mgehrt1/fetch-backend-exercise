@@ -1,3 +1,51 @@
-1. 
-2. 
-3. My favorite project I have created so far has been my trading bot for a video game I like called Rocket League.
+1----------------------------------------------------------------------------------------------------------------------------------
+
+I chose JavaScript as my language of choice because I am very familiar with writing in it, including past experience writing REST API's
+with it. This allowed me to not worry about learning something new and instead focus on the logic behind my solution.
+
+Because I wanted to use JavaScript, I used Node.js as my runtime environment due to familiarity and its wide use.
+
+I used Express.js as my web framework because it works well with Node.js, and is a very minimalistic framework which suited this short
+exercise well.
+
+I used the body-parser middleware library that comes with Express.js to parse HTTP request data into json objects automatically so that
+I could more easily use the data.
+
+I used the @datastructures-js/priority-queue package so that I could use a PriorityQueue in my solution because JavaScript does not
+have a built in PriorityQueue/Heap data structure. I wanted to use the PriorityQueue data structure to store my transactions so that
+they could be added in O(log N) time and accessed in O(1) time instead of sorting them before each use in O(N log(N)) time each time
+I wanted to use them.
+
+For testing, I used Postman because I am familiar with it, and it is a good and widely used tool for testing APIs.
+
+2----------------------------------------------------------------------------------------------------------------------------------
+
+Advantages:
+
+I use a PriorityQueue to store the transactions, so the transactions are sorted in O(log N) time as they are added instead of
+O(N log N) each time a transaction needs to be checked.
+
+My code is straightforward, well commented, and well docuemented. This means readers should be able to understand my code and
+how it works fairly easily, as well as run it following my README.md file.
+
+I have basic error handling. The code is pretty simple, and I think my error handling will handle most of, if not all of the 
+possible errors and edge cases it might encounter.
+
+Disadvantages:
+
+There is no type security. I could've used Typescrpt instead of JavaScript, which I would typically do, but I opted to use
+JavaScript because it has better readability, which I thought would be better for a grader reviewing this code.
+
+There is no data persistence. All the data is stored in a variable which is stored in memory instead. This means each time
+the application restarts, all the data will be lost. To fix this, a database could be added to store the data between
+applicaiton resets.
+
+3----------------------------------------------------------------------------------------------------------------------------------
+
+My favorite project I have created so far has been my trading bot for a video game I like called Rocket League. This application
+accesses online market data for in-game items and notifies me of trade postings that I should act on in order to make quick and
+easy profits. The biggest challenge I faced was that there was no publically available API or dataset for the game's items. To
+solve this issue, I made my own database and my own API accessing this data. To do this, I utilized web scraping to collect prices
+and a custom algorithm to calculate the prices for each item that I can safely buy and safely sell them at to make a certain
+minimum profit. My applicaiton then was able to use this data via my API to notify me of optimal trading opportunities. This
+project is my favorite because how much I learned while working on it it, and how efficient it has made me at trading.
